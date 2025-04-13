@@ -1,0 +1,320 @@
+<html>
+<head>
+<title>TestNG:  ChromeTest</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>ChromeTest</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>31/2/0</td>
+</tr><tr>
+<td>Started on:</td><td>Sun Apr 13 18:56:27 IST 2025</td>
+</tr>
+<tr><td>Total time:</td><td>206 seconds (206210 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='tests.TC_009_PhoneNumberExtention.testAddContactCancelButton()'><b>testAddContactCancelButton</b><br>Test class: tests.TC_009_PhoneNumberExtention</td>
+<td><div><pre>java.lang.AssertionError: Phone number does not start with country code: 9933546987 expected [true] but found [false]
+	at tests.TC_009_PhoneNumberExtention.testAddContactCancelButton(TC_009_PhoneNumberExtention.java:38)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace392818552", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace392818552'><pre>java.lang.AssertionError: Phone number does not start with country code: 9933546987 expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertTrue(Assert.java:57)
+	at tests.TC_009_PhoneNumberExtention.testAddContactCancelButton(TC_009_PhoneNumberExtention.java:38)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:848)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:481)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+</pre></div></td>
+<td>1</td>
+<td>tests.TC_009_PhoneNumberExtention@72cde7cc</td></tr>
+<tr>
+<td title='tests.TC_013_DeleteContactImpacts.testDeleteContact()'><b>testDeleteContact</b><br>Test class: tests.TC_013_DeleteContactImpacts</td>
+<td><div><pre>java.lang.AssertionError: Deleted contact is still present expected [false] but found [true]
+	at tests.TC_013_DeleteContactImpacts.testDeleteContact(TC_013_DeleteContactImpacts.java:71)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1211271091", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1211271091'><pre>java.lang.AssertionError: Deleted contact is still present expected [false] but found [true]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertFalse(Assert.java:79)
+	at tests.TC_013_DeleteContactImpacts.testDeleteContact(TC_013_DeleteContactImpacts.java:71)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:848)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:481)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+</pre></div></td>
+<td>5</td>
+<td>tests.TC_013_DeleteContactImpacts@53976f5c</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='tests.TC_015_LogoutFunctionality.testLogoutButtonIsVisible()'><b>testLogoutButtonIsVisible</b><br>Test class: tests.TC_015_LogoutFunctionality</td>
+<td></td>
+<td>2</td>
+<td>tests.TC_015_LogoutFunctionality@2f8dad04</td></tr>
+<tr>
+<td title='tests.TC_012_DeleteContactButton.testDeleteContact()'><b>testDeleteContact</b><br>Test class: tests.TC_012_DeleteContactButton</td>
+<td></td>
+<td>5</td>
+<td>tests.TC_012_DeleteContactButton@4e7912d8</td></tr>
+<tr>
+<td title='tests.TC_006_AddContact.testAddContact()'><b>testAddContact</b><br>Test class: tests.TC_006_AddContact<br>Parameters: , , 1998-02-26, rehman.arshad@gmail.com, 9933546987, Dairy Farm, Terlabad, South Andaman, Andaman, 744106, India, error</td>
+<td></td>
+<td>4</td>
+<td>tests.TC_006_AddContact@79da8dc5</td></tr>
+<tr>
+<td title='tests.TC_006_AddContact.testAddContact()'><b>testAddContact</b><br>Test class: tests.TC_006_AddContact<br>Parameters: , Rehman, 1998-02-26, rehman.arshad@gmail.com, 9933546987, Dairy Farm, Terlabad, South Andaman, Andaman, 744106, India, error</td>
+<td></td>
+<td>6</td>
+<td>tests.TC_006_AddContact@79da8dc5</td></tr>
+<tr>
+<td title='tests.TC_006_AddContact.testAddContact()'><b>testAddContact</b><br>Test class: tests.TC_006_AddContact<br>Parameters: Dinesh, Kumar, , , , , , , , , , success</td>
+<td></td>
+<td>2</td>
+<td>tests.TC_006_AddContact@79da8dc5</td></tr>
+<tr>
+<td title='tests.TC_011_EditContact.testContactEdit()'><b>testContactEdit</b><br>Test class: tests.TC_011_EditContact</td>
+<td></td>
+<td>9</td>
+<td>tests.TC_011_EditContact@696da30b</td></tr>
+<tr>
+<td title='tests.TC_002_SignUpFunctionality.testSignUp()'><b>testSignUp</b><br>Test class: tests.TC_002_SignUpFunctionality<br>Parameters: Muthu, Raj, , 12345678, error</td>
+<td></td>
+<td>1</td>
+<td>tests.TC_002_SignUpFunctionality@3738449f</td></tr>
+<tr>
+<td title='tests.TC_006_AddContact.testAddContact()'><b>testAddContact</b><br>Test class: tests.TC_006_AddContact<br>Parameters: Arshad, Rehman, 1998-02-26, tttttt, 9933546987, Dairy Farm, Terlabad, South Andaman, Andaman, 744106, India, error</td>
+<td></td>
+<td>3</td>
+<td>tests.TC_006_AddContact@79da8dc5</td></tr>
+<tr>
+<td title='tests.TC_001_SignUpButtonVisibility.testSignupButtonIsVisible()'><b>testSignupButtonIsVisible</b><br>Test class: tests.TC_001_SignUpButtonVisibility</td>
+<td></td>
+<td>0</td>
+<td>tests.TC_001_SignUpButtonVisibility@140c9f39</td></tr>
+<tr>
+<td title='tests.TC_004_LoginFunctionality.testLogin()'><b>testLogin</b><br>Test class: tests.TC_004_LoginFunctionality<br>Parameters: rmaj12@gmail.com, 12345678, error</td>
+<td></td>
+<td>0</td>
+<td>tests.TC_004_LoginFunctionality@11bd0f3b</td></tr>
+<tr>
+<td title='tests.TC_008_ContactListSortedTest.testAddContactCancelButton()'><b>testAddContactCancelButton</b><br>Test class: tests.TC_008_ContactListSortedTest</td>
+<td></td>
+<td>1</td>
+<td>tests.TC_008_ContactListSortedTest@67080771</td></tr>
+<tr>
+<td title='tests.TC_001_SignUpButtonVisibility.testSignupButtonIsClickable()'><b>testSignupButtonIsClickable</b><br>Test class: tests.TC_001_SignUpButtonVisibility</td>
+<td></td>
+<td>0</td>
+<td>tests.TC_001_SignUpButtonVisibility@140c9f39</td></tr>
+<tr>
+<td title='tests.TC_004_LoginFunctionality.testLogin()'><b>testLogin</b><br>Test class: tests.TC_004_LoginFunctionality<br>Parameters: mraj12350@gmail.com, , error</td>
+<td></td>
+<td>0</td>
+<td>tests.TC_004_LoginFunctionality@11bd0f3b</td></tr>
+<tr>
+<td title='tests.TC_003_LoginButtonVisibility.testLoginSubmitButtonIsClickable()'><b>testLoginSubmitButtonIsClickable</b><br>Test class: tests.TC_003_LoginButtonVisibility</td>
+<td></td>
+<td>0</td>
+<td>tests.TC_003_LoginButtonVisibility@69e1dd28</td></tr>
+<tr>
+<td title='tests.TC_006_AddContact.testAddContact()'><b>testAddContact</b><br>Test class: tests.TC_006_AddContact<br>Parameters: Arshad, Rehman, tttttt, rehman.arshad@gmail.com, 9933546987, Dairy Farm, Terlabad, South Andaman, Andaman, 744106, India, error</td>
+<td></td>
+<td>3</td>
+<td>tests.TC_006_AddContact@79da8dc5</td></tr>
+<tr>
+<td title='tests.TC_005_AddNewContactButton.testAddContactButtonIsClickable()'><b>testAddContactButtonIsClickable</b><br>Test class: tests.TC_005_AddNewContactButton</td>
+<td></td>
+<td>0</td>
+<td>tests.TC_005_AddNewContactButton@c333c60</td></tr>
+<tr>
+<td title='tests.TC_004_LoginFunctionality.testLogin()'><b>testLogin</b><br>Test class: tests.TC_004_LoginFunctionality<br>Parameters: mraj12350@gmail.com, PPPPPPPP, error</td>
+<td></td>
+<td>1</td>
+<td>tests.TC_004_LoginFunctionality@11bd0f3b</td></tr>
+<tr>
+<td title='tests.TC_006_AddContact.testAddContact()'><b>testAddContact</b><br>Test class: tests.TC_006_AddContact<br>Parameters: Arshad, Rehman, 1998-02-26, rehman.arshad@gmail.com, tttttt, Dairy Farm, Terlabad, South Andaman, Andaman, 744106, India, error</td>
+<td></td>
+<td>3</td>
+<td>tests.TC_006_AddContact@79da8dc5</td></tr>
+<tr>
+<td title='tests.TC_002_SignUpFunctionality.testSignUp()'><b>testSignUp</b><br>Test class: tests.TC_002_SignUpFunctionality<br>Parameters: , Raj, mraj12350@gmail.com, 12345678, error</td>
+<td></td>
+<td>1</td>
+<td>tests.TC_002_SignUpFunctionality@3738449f</td></tr>
+<tr>
+<td title='tests.TC_002_SignUpFunctionality.testSignUp()'><b>testSignUp</b><br>Test class: tests.TC_002_SignUpFunctionality<br>Parameters: Muthu, Raj, mraj12350@gmail.com, 12345678, success</td>
+<td></td>
+<td>1</td>
+<td>tests.TC_002_SignUpFunctionality@3738449f</td></tr>
+<tr>
+<td title='tests.TC_004_LoginFunctionality.testLogin()'><b>testLogin</b><br>Test class: tests.TC_004_LoginFunctionality<br>Parameters: , 12345678, error</td>
+<td></td>
+<td>0</td>
+<td>tests.TC_004_LoginFunctionality@11bd0f3b</td></tr>
+<tr>
+<td title='tests.TC_002_SignUpFunctionality.testSignUp()'><b>testSignUp</b><br>Test class: tests.TC_002_SignUpFunctionality<br>Parameters: Muthu, , mraj12350@gmail.com, 12345678, error</td>
+<td></td>
+<td>1</td>
+<td>tests.TC_002_SignUpFunctionality@3738449f</td></tr>
+<tr>
+<td title='tests.TC_004_LoginFunctionality.testLogin()'><b>testLogin</b><br>Test class: tests.TC_004_LoginFunctionality<br>Parameters: mraj12350@gmail.com, 12345678, success</td>
+<td></td>
+<td>0</td>
+<td>tests.TC_004_LoginFunctionality@11bd0f3b</td></tr>
+<tr>
+<td title='tests.TC_014_LogoutButtonVisibility.testLogoutButtonIsVisible()'><b>testLogoutButtonIsVisible</b><br>Test class: tests.TC_014_LogoutButtonVisibility</td>
+<td></td>
+<td>2</td>
+<td>tests.TC_014_LogoutButtonVisibility@2bfc268b</td></tr>
+<tr>
+<td title='tests.TC_005_AddNewContactButton.testAddContactButtonIsVisible()'><b>testAddContactButtonIsVisible</b><br>Test class: tests.TC_005_AddNewContactButton</td>
+<td></td>
+<td>1</td>
+<td>tests.TC_005_AddNewContactButton@c333c60</td></tr>
+<tr>
+<td title='tests.TC_006_AddContact.testAddContact()'><b>testAddContact</b><br>Test class: tests.TC_006_AddContact<br>Parameters: Arshad, Rehman, 1998-02-26, rehman.arshad@gmail.com, 9933546987, Dairy Farm, Terlabad, South Andaman, Andaman, 744106, India, success</td>
+<td></td>
+<td>3</td>
+<td>tests.TC_006_AddContact@79da8dc5</td></tr>
+<tr>
+<td title='tests.TC_006_AddContact.testAddContact()'><b>testAddContact</b><br>Test class: tests.TC_006_AddContact<br>Parameters: Arshad, , 1998-02-26, rehman.arshad@gmail.com, 9933546987, Dairy Farm, Terlabad, South Andaman, Andaman, 744106, India, error</td>
+<td></td>
+<td>4</td>
+<td>tests.TC_006_AddContact@79da8dc5</td></tr>
+<tr>
+<td title='tests.TC_003_LoginButtonVisibility.testLoginSubmitButtonIsVisible()'><b>testLoginSubmitButtonIsVisible</b><br>Test class: tests.TC_003_LoginButtonVisibility</td>
+<td></td>
+<td>0</td>
+<td>tests.TC_003_LoginButtonVisibility@69e1dd28</td></tr>
+<tr>
+<td title='tests.TC_002_SignUpFunctionality.testSignUp()'><b>testSignUp</b><br>Test class: tests.TC_002_SignUpFunctionality<br>Parameters: Muthu, Raj, mraj12350@gmail.com, , error</td>
+<td></td>
+<td>2</td>
+<td>tests.TC_002_SignUpFunctionality@3738449f</td></tr>
+<tr>
+<td title='tests.TC_007_CancelButtonFunctionality.testAddContactCancelButton()'><b>testAddContactCancelButton</b><br>Test class: tests.TC_007_CancelButtonFunctionality</td>
+<td></td>
+<td>2</td>
+<td>tests.TC_007_CancelButtonFunctionality@1eb5174b</td></tr>
+<tr>
+<td title='tests.TC_010_ContactClicking.testAddContactCancelButton()'><b>testAddContactCancelButton</b><br>Test class: tests.TC_010_ContactClicking</td>
+<td></td>
+<td>2</td>
+<td>tests.TC_010_ContactClicking@5fd4f8f5</td></tr>
+</table><p>
+</body>
+</html>

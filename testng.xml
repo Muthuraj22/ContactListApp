@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite  parallel="tests" name="Suite">
+  <test thread-count="5" name="ChromeTest">
+  <parameter name="url" value="https://thinking-tester-contact-list.herokuapp.com/" />
+  <parameter name="browser" value="Chrome" />  
+    <classes>
+      <class name="tests.TC_001_SignUpButtonVisibility"/>
+      <class name="tests.TC_002_SignUpFunctionality"/>
+      <class name="tests.TC_003_LoginButtonVisibility"/>
+      <class name="tests.TC_004_LoginFunctionality"/>
+      <class name="tests.TC_005_AddNewContactButton"/>
+      <class name="tests.TC_006_AddContact"/>
+      <class name="tests.TC_007_CancelButtonFunctionality"/>
+      <class name="tests.TC_008_ContactListSortedTest"/>
+      <class name="tests.TC_009_PhoneNumberExtention"/>
+      <class name="tests.TC_010_ContactClicking"/>
+      <class name="tests.TC_011_EditContact"/>
+      <class name="tests.TC_012_DeleteContactButton"/>
+      <class name="tests.TC_013_DeleteContactImpacts"/>
+      <class name="tests.TC_014_LogoutButtonVisibility"/>
+      <class name="tests.TC_015_LogoutFunctionality"/>
+    </classes>
+  </test> <!-- Test -->
+  
+  <test thread-count="5" name="EdgeTest">
+  <parameter name="url" value="https://thinking-tester-contact-list.herokuapp.com/" />
+  <parameter name="browser" value="Edge" />  
+    <classes>
+      <class name="tests.TC_001_SignUpButtonVisibility"/>
+      <class name="tests.TC_002_SignUpFunctionality"/>
+      <class name="tests.TC_003_LoginButtonVisibility"/>
+      <class name="tests.TC_004_LoginFunctionality"/>
+      <class name="tests.TC_005_AddNewContactButton"/>
+      <class name="tests.TC_006_AddContact"/>
+      <class name="tests.TC_007_CancelButtonFunctionality"/>
+      <class name="tests.TC_008_ContactListSortedTest"/>
+      <class name="tests.TC_009_PhoneNumberExtention"/>
+      <class name="tests.TC_010_ContactClicking"/>
+      <class name="tests.TC_011_EditContact"/>
+      <class name="tests.TC_012_DeleteContactButton"/>
+      <class name="tests.TC_013_DeleteContactImpacts"/>
+      <class name="tests.TC_014_LogoutButtonVisibility"/>
+      <class name="tests.TC_015_LogoutFunctionality"/>
+    </classes>
+  </test> <!-- Test -->
+  
+  <test thread-count="5" name="FirefoxTest">
+  <parameter name="url" value="https://thinking-tester-contact-list.herokuapp.com/" />
+  <parameter name="browser" value="Firefox" />  
+    <classes>
+      <class name="tests.TC_001_SignUpButtonVisibility"/>
+      <class name="tests.TC_002_SignUpFunctionality"/>
+      <class name="tests.TC_003_LoginButtonVisibility"/>
+      <class name="tests.TC_004_LoginFunctionality"/>
+      <class name="tests.TC_005_AddNewContactButton"/>
+      <class name="tests.TC_006_AddContact"/>
+      <class name="tests.TC_007_CancelButtonFunctionality"/>
+      <class name="tests.TC_008_ContactListSortedTest"/>
+      <class name="tests.TC_009_PhoneNumberExtention"/>
+      <class name="tests.TC_010_ContactClicking"/>
+      <class name="tests.TC_011_EditContact"/>
+      <class name="tests.TC_012_DeleteContactButton"/>
+      <class name="tests.TC_013_DeleteContactImpacts"/>
+      <class name="tests.TC_014_LogoutButtonVisibility"/>
+      <class name="tests.TC_015_LogoutFunctionality"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

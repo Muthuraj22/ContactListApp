@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite parallel="tests" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" parallel="tests" name="ChromeTest(failed)">
+    <parameter name="browser" value="Chrome"/>
+    <parameter name="url" value="https://thinking-tester-contact-list.herokuapp.com/"/>
+    <classes>
+      <class name="tests.TC_009_PhoneNumberExtention">
+        <methods>
+          <include name="setup"/>
+          <include name="closeBrowser"/>
+          <include name="launchingBrowserAndLoadingURL"/>
+          <include name="testAddContactCancelButton"/>
+        </methods>
+      </class> <!-- tests.TC_009_PhoneNumberExtention -->
+      <class name="tests.TC_013_DeleteContactImpacts">
+        <methods>
+          <include name="closeBrowser"/>
+          <include name="launchingBrowserAndLoadingURL"/>
+          <include name="setup"/>
+          <include name="testDeleteContact"/>
+        </methods>
+      </class> <!-- tests.TC_013_DeleteContactImpacts -->
+    </classes>
+  </test> <!-- ChromeTest(failed) -->
+  <test thread-count="5" parallel="tests" name="EdgeTest(failed)">
+    <parameter name="browser" value="Edge"/>
+    <parameter name="url" value="https://thinking-tester-contact-list.herokuapp.com/"/>
+    <classes>
+      <class name="tests.TC_008_ContactListSortedTest">
+        <methods>
+          <include name="testAddContactCancelButton"/>
+          <include name="setup"/>
+          <include name="closeBrowser"/>
+          <include name="launchingBrowserAndLoadingURL"/>
+        </methods>
+      </class> <!-- tests.TC_008_ContactListSortedTest -->
+      <class name="tests.TC_009_PhoneNumberExtention">
+        <methods>
+          <include name="setup"/>
+          <include name="closeBrowser"/>
+          <include name="launchingBrowserAndLoadingURL"/>
+          <include name="testAddContactCancelButton"/>
+        </methods>
+      </class> <!-- tests.TC_009_PhoneNumberExtention -->
+      <class name="tests.TC_013_DeleteContactImpacts">
+        <methods>
+          <include name="closeBrowser"/>
+          <include name="launchingBrowserAndLoadingURL"/>
+          <include name="setup"/>
+          <include name="testDeleteContact"/>
+        </methods>
+      </class> <!-- tests.TC_013_DeleteContactImpacts -->
+    </classes>
+  </test> <!-- EdgeTest(failed) -->
+  <test thread-count="5" parallel="tests" name="FirefoxTest(failed)">
+    <parameter name="browser" value="Firefox"/>
+    <parameter name="url" value="https://thinking-tester-contact-list.herokuapp.com/"/>
+    <classes>
+      <class name="tests.TC_015_LogoutFunctionality">
+        <methods>
+          <include name="setup"/>
+          <include name="closeBrowser"/>
+          <include name="launchingBrowserAndLoadingURL"/>
+          <include name="testLogoutButtonIsVisible"/>
+        </methods>
+      </class> <!-- tests.TC_015_LogoutFunctionality -->
+      <class name="tests.TC_007_CancelButtonFunctionality">
+        <methods>
+          <include name="testAddContactCancelButton"/>
+          <include name="closeBrowser"/>
+          <include name="setup"/>
+          <include name="launchingBrowserAndLoadingURL"/>
+        </methods>
+      </class> <!-- tests.TC_007_CancelButtonFunctionality -->
+      <class name="tests.TC_011_EditContact">
+        <methods>
+          <include name="testContactEdit"/>
+          <include name="closeBrowser"/>
+          <include name="launchingBrowserAndLoadingURL"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- tests.TC_011_EditContact -->
+      <class name="tests.TC_013_DeleteContactImpacts">
+        <methods>
+          <include name="closeBrowser"/>
+          <include name="launchingBrowserAndLoadingURL"/>
+          <include name="setup"/>
+          <include name="testDeleteContact"/>
+        </methods>
+      </class> <!-- tests.TC_013_DeleteContactImpacts -->
+      <class name="tests.TC_006_AddContact">
+        <methods>
+          <include name="setup"/>
+          <include name="closeBrowser"/>
+          <include name="launchingBrowserAndLoadingURL"/>
+          <include name="testAddContact" invocation-numbers="0 1 2 3 4 5 6 7"/>
+        </methods>
+      </class> <!-- tests.TC_006_AddContact -->
+    </classes>
+  </test> <!-- FirefoxTest(failed) -->
+</suite> <!-- Failed suite [Suite] -->
